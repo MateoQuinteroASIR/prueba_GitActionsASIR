@@ -1,0 +1,17 @@
+#Nombre del flujo en el que voy a trabajar
+name: mostrar hola
+#Push a la rama main
+on:
+   push:
+      branch: [ main ]
+
+jobs:
+#Nombre de trabajo
+   build:
+#Donde quiero que se ejecute
+      runs-on: ubuntu-latest
+#Pasos a seguir
+      steps: 
+      - name: Escribir hola por la pantalla
+        run: 
+         echo "Hola desde el runner de github action"
