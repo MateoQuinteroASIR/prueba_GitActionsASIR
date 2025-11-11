@@ -8,7 +8,9 @@ jobs:
       steps:
       - name: Fecha y hora de ejecución
         run:
-         DIA= 'date +"%d/%m/%Y"'
-         HORA= 'date +"%H:%M"'
-
-         echo "Se ha ejecutado el $DIA a las $HORA" 
+         echo "Hola desde el runner de github"
+         echo "Fecha y hora: "
+         date
+         ls 
+         echo "Versión de java"
+         java -version || echo "Java no instalado"
