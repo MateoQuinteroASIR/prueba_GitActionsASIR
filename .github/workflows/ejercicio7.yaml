@@ -1,0 +1,14 @@
+name: Ejercicio7
+on:
+   push:
+      branch: [ main ]
+jobs:
+   build:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Fecha y hora de ejecución
+        run:
+         DIA= 'date +"%d/%m/%Y"'
+         HORA= 'date +"%H:%M"'
+
+         echo "Se ha ejecutado el $DIA a las $HORA" 
