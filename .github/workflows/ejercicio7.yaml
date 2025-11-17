@@ -6,7 +6,7 @@ jobs:
    build:
       runs-on: ubuntu-latest
       steps:
-      - name: Fecha y hora de ejecución
+      - name: Fecha y hora de ejecución de java
         run:
          echo "Hola desde el runner de github"
          echo "Fecha y hora: "
